@@ -1,0 +1,10 @@
+name: macos-latest
+
+on: push
+
+jobs:
+  macos-job:
+    runs-on: macos-latest
+    steps:
+      - name: Set macos environment variable
+        run: set
