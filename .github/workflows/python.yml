@@ -1,0 +1,12 @@
+name: Python
+
+on: push
+
+jobs:
+  python-job:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Environment Variable
+        run: set
+      - name: Python
+        run: python3 --version
