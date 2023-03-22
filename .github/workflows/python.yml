@@ -1,12 +1,10 @@
-name: Python
+name: windows-latest
 
 on: push
 
 jobs:
-  python-job:
-    runs-on: ubuntu-22.04
+  windows-job:
+    runs-on: windows-latest
     steps:
       - name: Environment Variable
-        run: set
-      - name: Python
-        run: python3 --version
+        run: Get-Variable -ValueOnly
