@@ -1,10 +1,8 @@
 name: hello-world
-
 on: push
-
 jobs:
-  window-self-hosted-job:
+  my-job:
     runs-on: self-hosted
     steps:
-      - name: ty-step
-        run: echo "TY Hello World!"
+      - name: Docker
+        run: docker version
