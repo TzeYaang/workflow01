@@ -3,7 +3,7 @@ name: hello-world
 on: push
 
 jobs:
-  ty-job:
+  window-self-hosted-job:
     runs-on: self-hosted
     steps:
       - name: ty-step
